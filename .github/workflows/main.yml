@@ -1,0 +1,13 @@
+name: Schedule Job
+
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Schedule Workflow Executed with every minutes with the help of cron job "
